@@ -4,6 +4,7 @@
 provider "registry.terraform.io/hashicorp/helm" {
   version = "2.2.0"
   hashes = [
+    "h1:XgyX0QyHPW3rZ3xJZPsXPfRPsTnhTz1/QnJ8W6Wr/RM=",
     "h1:liBgOoOXhA2A1DbL0oaifyNnoGOyHxMG4+xD1Kl58XA=",
     "zh:01341dd1e9cc7e7f6999e11e7473bcdca2dd72dd27f91beed1f4fb599a15dfba",
     "zh:20e86c9eccd3a81ef5ac243af31b61fc4d2d679437384bd0870e92fa1b3ed6c9",
@@ -22,6 +23,7 @@ provider "registry.terraform.io/hashicorp/helm" {
 provider "registry.terraform.io/hashicorp/kubernetes" {
   version = "2.4.1"
   hashes = [
+    "h1:97xHszMhbkV/P3paCTHlrXLt6brQPVcLf+yBmtmOxtA=",
     "h1:RpE4kNQYkGxIyHyIEHXcdt/vKCtTVU2NNzTrOK4hb9E=",
     "zh:10a368f3a3f26d821f02b55f0c42bdd4d2cd0dc5e2568c513bce39d92d25526f",
     "zh:2183272a6d44f23d562d47ff4d6592685d8797838bdae69a50f92121743b020f",
@@ -38,10 +40,10 @@ provider "registry.terraform.io/hashicorp/kubernetes" {
 }
 
 provider "registry.terraform.io/linode/linode" {
-  version     = "1.20.0"
-  constraints = "~> 1.20"
+  version = "1.20.0"
   hashes = [
     "h1:2Y4M7xUziWxh3FNAE93sOw0UizqqZZl91azS87oP7Dg=",
+    "h1:FbfsZIV1SrL11AJ92mHWYAi/dsjk8UYU2fnzKghg1ug=",
     "zh:1568bb9c555d8c956c87a99826a38b6dd500046b522ed1b9e118809e3009c117",
     "zh:21cdac4002c041d4ef4fd81e2228bd883ffead1a07628c368966127ce2d1580d",
     "zh:6c1876b2e3af5fff0a3ac2b4961635f8fcea19b9910e5a027d96020e21dffdf2",
