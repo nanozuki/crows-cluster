@@ -5,7 +5,7 @@ resource "helm_release" "traefik" {
 
   repository = "https://helm.traefik.io/traefik"
   chart      = "traefik"
-  version    = "10.6.0"
+  version    = "10.16.0"
 
   values = [
     yamlencode({

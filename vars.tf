@@ -32,6 +32,7 @@ variable "postgres" {
     database      = string
     username      = string
     password      = string
+    uri           = string
   })
   sensitive = true
 }
