@@ -4,15 +4,19 @@ resource "helm_release" "postgres" {
 
   repository = "https://charts.bitnami.com/bitnami"
   chart      = "postgresql"
-  version    = "10.13.4"
+  version    = "11.1.20"
 
   values = [
     yamlencode({
       global = {
         postgresql = {
-          postgresqlDatabase = var.postgres.database
-          postgresqlPassword = var.postgres.password
-          postgresqlUsername = var.postgres.username
+          auth = {
+            postgresPassword = var.postgres.password
+            database         = var.postgres.database
+            password         = var.postgres.password
+            username         = var.postgres.username
+            existingSecret   = "postgres-postgresql"
+          }
         }
       }
     })

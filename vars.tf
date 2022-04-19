@@ -32,7 +32,18 @@ variable "postgres" {
     database      = string
     username      = string
     password      = string
-    uri           = string
+    uri = object({
+      vote2021 = string
+      miniflux = string
+    })
   })
   sensitive = true
+}
+
+variable "miniflux" {
+  type = object({
+    username = string
+    password = string
+  })
+
 }

@@ -101,7 +101,7 @@ resource "kubernetes_deployment" "vote2021-api" {
           image_pull_policy = "Always"
           env {
             name  = "VOTE2021_PG"
-            value = var.postgres.uri
+            value = var.postgres.uri.vote2021
           }
           port {
             container_port = 8000
