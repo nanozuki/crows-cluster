@@ -18,7 +18,7 @@ resource "kubernetes_deployment" "vote2021-web" {
       }
       spec {
         container {
-          image             = "ghcr.io/nanozuki/vote2021-web:1.1.0"
+          image             = "ghcr.io/nanozuki/vote2021-web:1.1.1"
           name              = "vote2021-web"
           image_pull_policy = "Always"
           port {
