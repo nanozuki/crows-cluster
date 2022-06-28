@@ -22,6 +22,7 @@ variable "traefik" {
   type = object({
     pilot_token     = string
     dashboard_users = string
+    tachidesk_users = string
   })
   sensitive = true
 }
