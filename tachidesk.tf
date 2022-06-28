@@ -38,6 +38,12 @@ resource "kubernetes_deployment" "tachidesk" {
         container {
           image = "ghcr.io/suwayomi/tachidesk:v0.6.3"
           name  = "tachidesk"
+          resources {
+            limits = {
+              cpu    = "0.5"
+              memory = "512Mi"
+            }
+          }
           port {
             container_port = 4567
           }
